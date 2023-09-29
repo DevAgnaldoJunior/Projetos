@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+ :root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+ }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+font-family: var(--fonte1);
+
+
+}
+        header{
+            background-color: black;
+            color: aliceblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            
+        }
+        header > h1{
+            padding-top: 50px;
+            color: white;
+            font-family: var(--fonte2);
+            font-variant: small-caps;
+            font-size: 10vw;
+        }
+        header > p{
+            padding-bottom: 50px;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            font-weight: bolder; /*deixar negrito*/
+        }
+         a:hover{
+            text-decoration: underline;
+        }
+     /*-----PRONTO-----------*/
+
+
+    section{ /*serve para todas as section*/
+        padding-top:10vh ;
+        padding-bottom: 10vh ;
+        line-height: 2em;/*espaço entre uma linha e outra*/
+        
+        font-family: var(--fonte3);
+        font-size: 3.5vw;
+        
+    }
+       
+        section.fundoBranco{
+            background-color: white;
+            color: black;
+            
+            
+        }
+            
+        section.fundoPreto{
+            background-color: rgb(68, 68, 68);
+            color: white;
+            box-shadow: inset 6px 6px 13px 0px black;
+            background-attachment: fixed;
+
+        }
+     section.fundoPreto > p{
+     display: inline-block; /*caixa que se adapta ao tamanho do conteudo*/
+     padding: 10px;
+        background-color: rgba(0, 0, 0, 0.377);
+        text-shadow:  2px 2px 2px black; /*sombra no texto*/
+        margin-left: 30px;
+        
+      
+   }
+   section#img1{
+background-image: url('imagens/background001.jpg');
+background-position: right center;
+background-size: cover;
+   }
+   section#img2{
+background-image: url('imagens/background002.jpg');
+background-position: right center;
+background-size: cover;
+
+   }
+   section > p{
+    padding-bottom: 2em;
+    padding-left: 30px;
+   }
+   
+
+/*-----PRONTO-----------*/
+
+
+     footer{
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 10px;
+     }
+     footer a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+     }
