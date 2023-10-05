@@ -59,11 +59,27 @@ div#formulario>p{
     font-size: 0.8em;
 }
 div.campo{
-    background-color: #618878;
+    border: 1px solid black;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 5px 0px;
+}
+div.campo > span{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #ffffff;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 8px;
+    width: calc(100% - 47px);
+    transform: translateY(-12px);
+    color: white;
+    border: 0px;
+    color: black;
 }
 form > input[type=submit]{
     display: block;
