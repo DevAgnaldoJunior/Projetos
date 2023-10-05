@@ -1,9 +1,49 @@
 @charset "UTF-8";
 
 /*Paleta
-cor1:#464112
-cor2:#39310e
-cor3:#2d2109
-cor4:#201105
-cor5:#130100
+cor1:#204437
+cor2:#365b4d
+cor3:#4c7163
+cor4: #618878
+cor5: #779e8e
 */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body,html{
+    background-color:#204437 ;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;/*para centraizar*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*para centraizar*/
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.644)
+}
+section#login > div#imagem{
+    display: block;
+    background: #204437 url(../imagens/imagemIena.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
